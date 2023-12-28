@@ -28,8 +28,8 @@
         #container {
             display: flex;
             width: 80%;
-            max-width: 1000px;
-            height: 60vh;
+            max-width: 1200px; /* Increased max-width */
+            height: 70vh; /* Increased height */
             border: 2px solid #3498db;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@
         }
 
         #leftHalf, #rightHalf {
-            width: 50%;
+            width: 60%; /* Increased width */
             box-sizing: border-box;
             padding: 20px;
             display: flex;
@@ -77,13 +77,13 @@
     </style>
 </head>
 <body>
-    <h1>Object Detection App</h1>
+    <h1>Mask Detection App</h1>
 
     <div id="container">
         <!-- Left Half - Image Input -->
         <div id="leftHalf">
             <h2>Input Image</h2>
-            <form id="imageForm">
+            <form id="imageForm" style="width: 80%;"> <!-- Increased form width -->
                 <input type="file" id="imageInput" accept=".png, .jpg, .jpeg">
             </form>
             <br>
@@ -92,7 +92,7 @@
 
         <!-- Right Half - Object Detection Output -->
         <div id="rightHalf" class="d-flex flex-column align-items-center justify-content-center">
-            <h2>Object Detection Output</h2>
+            <h2>Mask Detection Output</h2> <!-- Updated text -->
             <img id="annotatedImageView" alt="Annotated Image Preview">
             <div id="loading">Loading...</div>
             <button id="predictButton" class="btn btn-primary" onclick="predict()">Predict</button>
