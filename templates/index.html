@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Detection App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #3498db;
+        }
+
+        #container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px; /* Increased max-width */
+            height: 70vh; /* Increased height */
+            border: 2px solid #3498db;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        #leftHalf, #rightHalf {
+            width: 60%; /* Increased width */
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #imageView, #annotatedImageView {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+            border: 2px solid #3498db;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #output {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #loading {
+            display: none;
+            color: #e74c3c;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        #predictButton {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mask Detection App</h1>
+
+    <div id="container">
+        <!-- Left Half - Image Input -->
+        <div id="leftHalf">
+            <h2>Input Image</h2>
+            <form id="imageForm" style="width: 80%;"> <!-- Increased form width -->
+                <input type="file" id="imageInput" accept=".png, .jpg, .jpeg">
+            </form>
+            <br>
+            <img id="imageView" alt="Image Preview">
+        </div>
+
+        <!-- Right Half - Object Detection Output -->
+        <div id="rightHalf" class="d-flex flex-column align-items-center justify-content-center">
+            <h2>Mask Detection Output</h2> <!-- Updated text -->
+            <img id="annotatedImageView" alt="Annotated Image Preview">
+            <div id="loading">Loading...</div>
+            <button id="predictButton" class="btn btn-primary" onclick="predict()">Predict</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function previewImage() {
+            var input = document.getElementById('imageInput');
+            var imageView = document.getElementById('imageView');
+
+            input.addEventListener('change', function () {
+                var file = input.files[0];
+
+                if (file && /\.(png|jpg|jpeg)$/.test(file.name.toLowerCase())) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        imageView.src = e.target.result;
+                    };
+
+                    reader.readAsDataURL(file);
+                } else {
+                    alert("Please select a valid image file (PNG, JPG, JPEG).");
+                    input.value = '';
+                }
+            });
+        }
+
+        function predict() {
+            var outputElement = document.getElementById('output');
+            var loadingElement = document.getElementById('loading');
+            var input = document.getElementById('imageInput');
+            var file = input.files[0];
+
+            if (!file) {
+                alert("Please select an image first.");
+                return;
+            }
+
+            loadingElement.style.display = 'block';
+
+            var formData = new FormData();
+            formData.append('file', file);
+
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                loadingElement.style.display = 'none';
+                var annotatedImageView = document.getElementById('annotatedImageView');
+                annotatedImageView.src = data.annotated_image;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        previewImage();
+    </script>
+</body>
+</html>
