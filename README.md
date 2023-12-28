@@ -17,9 +17,21 @@ The model is trained on CUDA processor on 128 images per batch for 500 iteration
 # Results of model
 The images below are the models prediction to detect the two classes 'Mask' and 'No Mask'
 
-Original image :
+# Original image
 ![160](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/7772e6f2-f0cc-4a18-9fac-e88ee2109bfe)
 
-Predicted annoatations 
+# Predicted annoatations 
 ![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/47146b67-8da2-40de-9467-c42d36aa115d)
+
+# Original image
+![1_R_kFK9pNLfKAuopY_lAaPQ](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/37ec9456-2139-4a07-b019-456177910dcb)
+
+# Predicted annoatations 
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/820d2f15-0616-4c7f-825f-cc9c8741f4e2)
+
+
+# Model Evaluation 
+
+
+
 
