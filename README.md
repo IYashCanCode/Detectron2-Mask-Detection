@@ -39,4 +39,7 @@ On testing images the model is able to get around 21% AP (Average Precision)
 ![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/31c1b639-5c80-46ef-8d89-cae740fb1e5a)
 
 
+#
+# Flask Output
+#
 
