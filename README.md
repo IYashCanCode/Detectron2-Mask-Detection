@@ -15,5 +15,11 @@ There 1035 training dataset instances in which 885 instances are of 'Mask' and 1
 The model is trained on CUDA processor on 128 images per batch for 500 iterations
 
 # Results of model
+The images below are the models prediction to detect the two classes 'Mask' and 'No Mask'
+
+Original image :
+![160](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/7772e6f2-f0cc-4a18-9fac-e88ee2109bfe)
+
+Predicted annoatations 
 ![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/47146b67-8da2-40de-9467-c42d36aa115d)
 
