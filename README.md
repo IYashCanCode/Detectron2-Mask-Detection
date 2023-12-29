@@ -71,7 +71,10 @@ Once you upload an image it will caption it with the text uploaded images and pr
 
 # Results on Streamlit API
 ![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/b6b1a4fa-ef62-405e-b056-cbfe67feba41)
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/7aee6958-b89f-4d72-8ff9-6ab84f8044ff)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/0450a4dc-398b-479a-b84c-2f09a5012dc2)
+
+# THANK YOU 
+
 
 
 
