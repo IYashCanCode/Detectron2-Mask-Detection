@@ -61,14 +61,15 @@ For this model a flask API is created to interact to the model over internet.
 #
 For this model a Streamlit API is created to interact to the model over internet.
 
-# User Interface of Flask API
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/83b3bacb-b78a-42ce-833f-9ac634e0759f)
+# User Interface of Streamlit API
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/f50af214-df7e-42b4-b244-40dc162f4de2)
+
 
 Once you upload an image it will caption it with the text uploaded images and provide a predict button to predict the classes in the images
 
 # Results on Streamlit API
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/b6b1a4fa-ef62-405e-b056-cbfe67feba41)
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/0450a4dc-398b-479a-b84c-2f09a5012dc2)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/ee43e353-963c-44a9-a519-6ad8c9b46c9e)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/2a4dd111-32e5-4274-b315-c62bfeef78a7)
 
 # THANK YOU 
 
