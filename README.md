@@ -1,10 +1,10 @@
-# Detectron2-Mask-Detection
-Problem Statement : Creating a Detectron2 custome object detection model to detect Mask.
+# Detectron2-Mask-Segmentation
+Problem Statement : Creating a Detectron2 custome object segmentation model to detect Mask.
 
 Dataset link : https://www.kaggle.com/datasets/aditya276/face-mask-dataset-yolo-format
 
 
-# Mask detection on detectron2 colab file
+# Mask segmentation on detectron2 colab file
 
 The detectron model used for creating this model is 'faster_rcnn_R_50_C4', a prebuild model present in detectron2 model_zoo module.
 
