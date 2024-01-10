@@ -48,12 +48,12 @@ For this model a flask API is created to interact to the model over internet.
 # Results on Flask API
 ![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/396114ca-bc94-4faf-be15-b782d608d6c4)
 
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/bf41e1c4-2c9e-46c8-98dc-6691aec99d61)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/251696f7-bd81-429f-b74a-0ecaa994b767)
 
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/5047cf1f-fe85-4495-97ca-19ab88308703)
 
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/dd6aabb6-693a-4a84-97ee-6b5cf11be42b)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/c2221dd2-2607-4313-bb79-09fe2c7d7150)
 
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/1567d777-983f-4502-9f5d-c78e2baa38e8)
 
 
 #
