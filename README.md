@@ -42,11 +42,11 @@ On testing images the model is able to get around 70% AP (Average Precision)
 For this model a flask API is created to interact to the model over internet.
 
 # User Interface of Flask API
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/ecd782ac-8fc3-42e0-a647-7b276b666f84)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/7d8107fd-a865-42cd-9986-f780946a76f0)
 
 
 # Results on Flask API
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/7331cfb9-1e71-42db-87de-ea62647cf1a6)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/396114ca-bc94-4faf-be15-b782d608d6c4)
 
 ![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/bf41e1c4-2c9e-46c8-98dc-6691aec99d61)
 
