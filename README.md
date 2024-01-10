@@ -6,7 +6,7 @@ Dataset link : https://www.kaggle.com/datasets/aditya276/face-mask-dataset-yolo-
 
 # Mask segmentation on detectron2 colab file
 
-The detectron model used for creating this model is 'faster_rcnn_R_50_C4', a prebuild model present in detectron2 model_zoo module.
+The detectron model used for creating this model is 'mask_rcnn_R_101_FPN_3x', a prebuild model present in detectron2 model_zoo module.
 
 The input data is first annotated using LabelMe annotation tool, there are 2 classes made on the training and testing images named 'Mask' and 'No Mask'. After annotating the images the json format is converted into desired COCO format required by detectron2.
 
