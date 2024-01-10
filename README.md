@@ -21,13 +21,15 @@ The images below are the models prediction to detect the two classes 'Mask' and 
 ![160](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/7772e6f2-f0cc-4a18-9fac-e88ee2109bfe)
 
 # Predicted annoatations 
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/47146b67-8da2-40de-9467-c42d36aa115d)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/2bebda70-721e-40e6-a633-ba22e0b854cf)
+
 
 # Original image
 ![1_R_kFK9pNLfKAuopY_lAaPQ](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/37ec9456-2139-4a07-b019-456177910dcb)
 
 # Predicted annoatations 
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/820d2f15-0616-4c7f-825f-cc9c8741f4e2)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/638231cf-1dd6-473e-b02d-99215df14254)
+
 
 
 # Model Evaluation 
