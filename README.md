@@ -34,11 +34,13 @@ The images below are the models prediction to detect the two classes 'Mask' and 
 
 # Model Evaluation 
 
-On training images the model is able to get around 45% AP (Average Precision)
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/048216af-a547-4345-b266-71307dfe3a13)
+On training images the model is able to get around 71% AP (Average Precision)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/330a0c0a-0b5d-4ed9-bc22-8373fa7d4a83)
 
-On testing images the model is able to get around 21% AP (Average Precision)
-![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/31c1b639-5c80-46ef-8d89-cae740fb1e5a)
+
+On testing images the model is able to get around 70% AP (Average Precision)
+![image](https://github.com/IYashCanCode/Detectron2-Mask-Detection/assets/91466909/5ba99d51-961a-4348-aead-522512d07242)
+
 
 
 #
